@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 		$.ajax ({
 			type: "GET",
-			url: "http://omdbapi.com?t=" + title,
+			url: "https://omdbapi.com?t=" + title,
 			success: function(movies) {
 				if(movies.Response === "False"){
 					alert("That movie cannot be found");
